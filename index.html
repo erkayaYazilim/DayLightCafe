@@ -10,6 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS dosyası -->
     <link rel="stylesheet" href="style.css">
+    <style>
+    /* Dil değiştirme butonlarına basit bir stil */
+    .language-buttons {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .language-buttons button {
+        margin: 0 5px;
+        padding: 5px 10px;
+        background: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .language-buttons button:hover {
+        background: #eee;
+    }
+    </style>
 </head>
 <body>
 
@@ -18,6 +39,12 @@
         <!-- Sosyal Medya İkonları -->
         <div class="social-icons">
             <a href="https://www.instagram.com/daylight__cafe?igsh=NHppdDcyY3R3c25p" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Dil Değiştirme Butonları -->
+        <div class="language-buttons">
+            <button onclick="setLanguage('tr')">TR</button>
+            <button onclick="setLanguage('en')">EN</button>
         </div>
 
         <div class="header-content">
@@ -52,6 +79,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
 
     <!-- JavaScript kodu -->
     <script src="script.js"></script>
